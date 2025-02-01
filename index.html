@@ -233,7 +233,8 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-8 col-xl-7">
-              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formspree.io/f/mkgobbdb"
+              method="POST">
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
@@ -255,6 +256,7 @@
                     class="form-control"
                     id="email"
                     type="email"
+                    name="email"
                     placeholder="name@example.com"
                     data-sb-validations="required,email"
                   />
@@ -274,6 +276,7 @@
                     class="form-control"
                     id="message"
                     type="text"
+                    name="message"
                     placeholder="Agrega aquí tu mensaje..."
                     style="height: 10rem"
                     data-sb-validations="required"
